@@ -1,0 +1,11 @@
+Had to do MACOSX_DEPLOYMENT_TARGET=10.14 pip install --editable .
+
+Had to bet install wget and pip 
+
+Changed makedataforbert script, and moved it inside the data folder made in the step above
+
+Moved top level preprocess.py also into that folder to run
+
+Run with python preprocess.py --source-lang en --target-lang de \
+  --trainpref train --validpref valid --testpref test \
+  --destdir destdir  --joined-dictionary --bert-model-name bert-base-uncased
